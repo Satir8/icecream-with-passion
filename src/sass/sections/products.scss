@@ -4,39 +4,108 @@
   padding-top: 120px;
 }
 
-.section__subtitle,
-.section__title {
-  display: block;
-  text-align: center;
-  margin-top: 60px;
+.section {
+  &__subtitle,
+  &__title {
+    display: block;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFA5BA;
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 52px;
+    color: #D41442;
+    margin-bottom: 50px;
+  }
 }
 
-.section__subtitle {
-  font-size: 18px;
-  line-height: 38px;
-  color: #FFA5BA;
-}
-
-.section__title {
-  font-size: 36px;
-  line-height: 52px;
-  color: #D41442;
+.products-mb {
+  margin-bottom: 144px;
 }
 
 .productcts__list {
-  display: flex;
+  display: block;
 }
 
 .products__item {
   position: relative;
-  background-color: #FFB8C9;
-  border-radius: 50px;
+  border-radius: 25px;
+  width: 245px;
+  margin-bottom: 128px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  margin-bottom: 130px;
+}
+
+.pink{
+  background-color: #ffb8c9;
+}
+
+.brown{
+  background-color: #efd1a5;
+}
+
+.green{
+  background-color: #c1e297;
 }
 
 .icecream-pic {
   position: absolute;
-  top: -100px;
+  top: -80px;
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.icecream-title {
+  font-family: 'Titan One';
+  color: #ffffff;
+  text-align: center;
+  padding-top: 160px;
+  margin-bottom: 30px;
+}
+
+.points{
+  display: flex;
+  justify-content: space-between;
+  width: 34px;
+  height: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.point {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.icecream-text{
+  @extend %main-font-700-md;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+
+.circle{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(../images/img/arrow-right.png);
 }
