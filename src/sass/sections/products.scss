@@ -47,6 +47,10 @@
   margin-bottom: 130px;
 }
 
+.products__item:last-child{
+  margin-bottom: 100px;
+}
+
 .pink{
   background-color: #ffb8c9;
 }
@@ -61,14 +65,25 @@
 
 .icecream-pic {
   position: absolute;
-  top: -80px;
+  // top: -80px;
+  bottom: 376px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
+// .brownpic{
+//   left: 28px;
+// }
+
+// .greenpic{
+//   left: 16px;
+// }
+
 .icecream-title {
   font-family: 'Titan One';
+  font-size: 15px;
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   padding-top: 160px;
@@ -78,7 +93,7 @@
 .points{
   display: flex;
   justify-content: space-between;
-  width: 34px;
+  width: 28px;
   height: 10px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -107,5 +122,45 @@
   margin-bottom: 30px;
   background-color: #ffffff;
   border-radius: 50%;
-  background-image: url(../images/img/arrow-right.png);
+  background-image: url(./../../images/img/products/arrow-right.png);
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    width: 700px;
+  }
+  
+  .products__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .products__item{
+    width: 218px;
+    margin-bottom: 120px;
+  }
+  
+  .products__item:last-child{
+    margin-bottom: 120px;
+  }
+
+  // .pinkpic{
+  //   width: 217px;
+  //   height: 191px;
+  // }
+
+  // .brownpic{
+  //   width: 170px;
+  //   height: 209px;
+  // }
+
+  // .greenpic{
+  //   width: 159px;
+  //   height: 219px;
+  // }
+
+  .icecream-pic{
+    margin-bottom: 22px;
+  }
+
 }
