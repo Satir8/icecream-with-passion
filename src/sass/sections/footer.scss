@@ -5,6 +5,7 @@
   &__list {
     width: 252px;
     margin: 0 auto;
+    margin-bottom: 54px;
 
     .card {
       border-radius: 25px;
@@ -24,8 +25,8 @@
         &--part:nth-child(2) {
           padding: 32px 0px;
           border-top: 1px solid rgba(0, 0, 0, 0.078);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.078); 
-        }      
+          border-bottom: 1px solid rgba(0, 0, 0, 0.078);
+        }
 
         &--part:nth-child(3) {
           padding-top: 30px;
@@ -83,6 +84,65 @@
           font-family: "DM Sans";
           color: rgb(144, 126, 130);
         }
+      }
+    }
+  }
+
+
+  &__btns-wrapper {
+    .btn-locations {
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      background-color: rgb(212, 20, 66);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 14px;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+      &__svg-chevron {
+        fill: #ffffff;
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(199, 19, 62);
+      }
+    }
+
+    .btn-franchise {
+      font-size: 14px;
+      font-family: "DM Sans";
+      font-weight: 700;
+      color: rgb(212, 20, 66);
+      background-color: rgb(255, 255, 255);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+
+      &__svg-chevron {
+        fill: rgb(212, 20, 66);
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(236, 235, 235);
       }
     }
   }
