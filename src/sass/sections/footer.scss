@@ -180,20 +180,21 @@
   width: 254px;
   display: block;
   margin: 0 auto;
+  position: relative;
 
   &__list{
+
     display: flex;
     justify-content: space-evenly;
-    width: 200px;
-    height: 38px;
+    height: 34px;
     margin-bottom: 48px;
 
     &-link{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       background-color: #ffa5ba;
       border-radius: 50%;
     }
