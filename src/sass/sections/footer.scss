@@ -1,0 +1,149 @@
+.ftr {
+  background-color: rgb(255, 245, 247);
+  padding: 0px 32px;
+
+  &__list {
+    width: 252px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+
+    .card {
+      border-radius: 25px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+      padding: 50px 36px 46px 36px;
+
+      &:nth-child(2) .card__content-list--label {
+        background-color: rgb(193, 226, 151);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &__content-list {
+        &--part:nth-child(2) {
+          padding: 32px 0px;
+          border-top: 1px solid rgba(0, 0, 0, 0.078);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.078);
+        }
+
+        &--part:nth-child(3) {
+          padding-top: 30px;
+        }
+
+        &--label {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 500;
+          font-family: "DM Sans";
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          border-radius: 5px;
+          background-color: rgb(239, 209, 165);
+          padding: 2px 15px 1px 15px;
+          margin-bottom: 34px;
+        }
+
+        &--location {
+          font-size: 13px;
+          font-family: "DM Sans";
+          font-weight: 700;
+          color: rgb(0, 0, 0);
+          margin-bottom: 18px;
+        }
+
+        &--description {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(144, 126, 130);
+          padding-right: 4px;
+          margin-bottom: 30px;
+        }
+
+        &--shrelude {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(0, 0, 0);
+
+          &:not(:nth-child(2)) {
+            margin-bottom: 14px;
+          }
+
+          span {
+            display: block;
+            font-size: 13px;
+            font-family: "DM Sans";
+            color: rgb(255, 165, 186);
+            line-height: 20px;
+          }
+        }
+
+        &--contact a {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(144, 126, 130);
+        }
+      }
+    }
+  }
+
+
+  &__btns-wrapper {
+    .btn-locations {
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      background-color: rgb(212, 20, 66);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 14px;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+      &__svg-chevron {
+        fill: #ffffff;
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(199, 19, 62);
+      }
+    }
+
+    .btn-franchise {
+      font-size: 14px;
+      font-family: "DM Sans";
+      font-weight: 700;
+      color: rgb(212, 20, 66);
+      background-color: rgb(255, 255, 255);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+
+      &__svg-chevron {
+        fill: rgb(212, 20, 66);
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(236, 235, 235);
+      }
+    }
+  }
+}
