@@ -1,0 +1,257 @@
+.hdr {
+  padding-top: 6px;
+  background-color: rgb(255, 184, 201);
+  padding: 6px 14px 0px 14px;
+
+  .nav__global-list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(4) {
+        display: none;
+      }
+
+      .logo {
+        width: 200px;
+        height: 50px;
+        background-image: url("../images/img/header/logo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-resolution:192dpi) {
+          background-image: url("../images/img/header/logo@2x.png");
+        }
+      }
+
+      .nav-list {
+        display: none;
+      }
+
+      .navigation__burger {
+        .burger-menu {
+          position: relative;
+
+          #burger-menu__toggle {
+            opacity: 0;
+
+            &:checked~.burger-menu__btn>span {
+              transform: rotate(45deg);
+              background-color: #ffffff;
+            }
+
+            &:checked~.burger-menu__btn>span::before {
+              top: 0;
+              transform: rotate(0);
+              background-color: #ffffff;
+            }
+
+            &:checked~.burger-menu__btn>span::after {
+              top: 0;
+              transform: rotate(90deg);
+              background-color: #ffffff;
+            }
+
+            &:checked~.burger-menu__box {
+              visibility: visible;
+              right: 0;
+            }
+          }
+
+          &__btn {
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            width: 22px;
+            height: 15px;
+            z-index: 1;
+
+            span,
+            span::before,
+            span::after {
+              display: block;
+              position: absolute;
+              width: 22px;
+              height: 1px;
+              background-color: rgb(212, 20, 66);
+              transition-duration: .25s;
+            }
+
+            span::before {
+              content: '';
+              top: -8px;
+            }
+
+            span::after {
+              content: '';
+              top: 8px;
+            }
+          }
+
+          .burger-menu__box {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            right: 100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 60px 0;
+            background-color: rgb(225, 121, 145);
+            box-shadow: -15px 0px 60px 0px rgba(0, 0, 0, 0.3);
+            transition-duration: .25s;
+
+            .burger-buy-btn {
+              font-size: 15px;
+              font-family: "DM Sans";
+              font-weight: 700;
+              color: rgb(212, 20, 66);
+              background-color: rgb(255, 255, 255);
+              padding: 14px 68px 14px 64px;
+              border-radius: 21px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+              margin: 0 auto;
+              margin-bottom: 18px;
+
+
+              &__svg-chevron {
+                fill: rgb(212, 20, 66);
+                width: 12px;
+                height: 12px;
+                margin-left: 18px;
+                margin-top: 2px;
+              }
+
+              &:hover {
+                background-color: rgb(236, 235, 235);
+              }
+            }
+
+            .burger-menu__item {
+              display: block;
+              color: #ffffff;
+              font-size: 13px;
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              padding: 14px 0px 14px 20px;
+              border-top: 1px solid rgba(255, 255, 255, 0.098);
+              transition-duration: .25s;
+
+              &:last-child {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.098);
+              }
+
+              &:hover,
+              &:focus {
+                color: #d41442;
+              }
+            }
+          }
+        }
+      }
+
+      .buy-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+.intro {
+  width: 210px;
+
+  &__heading {
+    font-size: 27px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      font-size: 45px;
+      color: rgb(212, 20, 66);
+    }
+  }
+
+  .products-btn {
+    font-size: 9px;
+    font-family: "DM Sans";
+    color: rgb(255, 255, 255);
+    border-radius: 14px;
+    background-color: rgb(212, 20, 66);
+    padding: 10px 18px;
+
+    &:hover {
+      background-color: rgb(199, 19, 62);
+    }
+  }
+
+  .how-btn {
+    font-size: 9px;
+    font-family: "DM Sans";
+    color: rgb(212, 20, 66);
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 10px 16px;
+
+    &:hover {
+      background-color: rgb(236, 235, 235);
+    }
+  }
+}
+
+.icecream-picture-wrapper {
+  width: 342px;
+  height: 342px;
+  border-radius: 50%;
+  background-color: rgb(255, 165, 186);
+
+}
+
+
+// background-image: url(../images/img/header/icecream.png);
+// background-position: center;
+// background-repeat: no-repeat;
+
+// .icecream-picture {
+// }
+
+
+// .buy-btn {
+//   font-size: 15px;
+//   font-family: "DM Sans";
+//   font-weight: 700;
+//   color: rgb(212, 20, 66);
+//   background-color: rgb(255, 255, 255);
+//   padding: 12px 28px 12px 38px;
+//   border-radius: 21px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+
+//   &__svg-chevron {
+//     fill: rgb(212, 20, 66);
+//     width: 12px;
+//     height: 12px;
+//     margin-left: 4px;
+//     margin-top: 2px;
+//   }
+
+//   &:hover {
+//     background-color: rgb(236, 235, 235);
+//   }
+// }
