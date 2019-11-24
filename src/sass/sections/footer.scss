@@ -90,6 +90,8 @@
 
 
   &__btns-wrapper {
+    margin-bottom: 110px;
+  
     .btn-locations {
       font-family: "DM Sans";
       font-size: 14px;
@@ -146,4 +148,28 @@
       }
     }
   }
+}
+
+.ftr__heading{
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  color: #ffa5ba;
+  text-transform: uppercase;
+
+  &-subtitle{
+    display: block;
+    font-size: 35px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    color: #d41442;
+  }
+}
+
+.contact__svg-android{
+  width: 15px;
+  height: 15px;
+  fill: #ffffff;
 }
