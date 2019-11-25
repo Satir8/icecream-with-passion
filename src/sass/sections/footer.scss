@@ -323,11 +323,41 @@
       padding: 14px 0; 
     }
   }
-  
+  // DOWN OF FOOTER
   .down-wrapper{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .ftr__titles{
+    width: 316px;
+  }
+
+  .ftr__heading{
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .ftr__heading-subtitle{
+    font-size: 51px;
+    line-height: 49px;
+  }
+
+  .contact{
+    width: 280px;
+  }
+
+  .contact__phone{
+    font-size: 14px;
   }
   
+  .ftr__bottom-span{
+    display: inline-block;
+  }
+
+  .ftr__bottom-copyright{
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
