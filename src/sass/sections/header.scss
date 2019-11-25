@@ -1,7 +1,16 @@
 .hdr {
   padding-top: 6px;
   background-color: rgb(255, 184, 201);
-  padding: 6px 14px 0px 14px;
+  padding: 6px 14px 156px 14px;
+  background-image: url("../images/img/header/icecream.png"), url("../images/img/header/circle.png");
+  background-size: 169px, 283px;
+  background-position: right 34px top 92px, right top 80px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution:192dpi) {
+    background-image: url("../images/img/header/icecream@2x.png"), url("../images/img/header/circle@2x.png");
+  }
+
 
   .nav__global-list {
     position: relative;
@@ -9,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 140px;
 
     &-item {
       &:nth-child(2) {
@@ -59,9 +69,16 @@
               background-color: #ffffff;
             }
 
-            &:checked~.burger-menu__box {
+            &:checked~.burger-menu__wrapper {
               visibility: visible;
+              top: 0;
               right: 0;
+
+              .burger-menu__box {
+                visibility: visible;
+                right: 0;
+                box-shadow: -10px 0px 30px 0px rgba(0, 0, 0, 0.5);
+              }
             }
           }
 
@@ -71,7 +88,7 @@
             position: relative;
             width: 22px;
             height: 15px;
-            z-index: 1;
+            z-index: 5;
 
             span,
             span::before,
@@ -95,19 +112,40 @@
             }
           }
 
+          .overlay {
+            background-color: rgb(0, 0, 0);
+            opacity: 0.4;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 320px;
+            height: 667px;
+            z-index: 283;
+          }
+
+          .burger-menu__wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .4);
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            z-index: 3;
+          }
+
           .burger-menu__box {
             display: block;
             position: fixed;
             visibility: hidden;
             top: 0;
             right: 100%;
-            width: 300px;
+            width: 250px;
             height: 100%;
             margin: 0;
             padding: 60px 0;
             background-color: rgb(225, 121, 145);
-            box-shadow: -15px 0px 60px 0px rgba(0, 0, 0, 0.3);
             transition-duration: .25s;
+            z-index: 4;
 
             .burger-buy-btn {
               font-size: 15px;
@@ -159,94 +197,252 @@
           }
         }
       }
+
+      .buy-btn {
+        font-size: 15px;
+        font-family: "DM Sans";
+        font-weight: 700;
+        color: rgb(212, 20, 66);
+        background-color: rgb(255, 255, 255);
+        padding: 12px 28px 12px 38px;
+        border-radius: 21px;
+        display: none;
+        box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+        &__svg-chevron {
+          fill: rgb(212, 20, 66);
+          width: 12px;
+          height: 12px;
+          margin-left: 4px;
+          margin-top: 2px;
+        }
+
+        &:hover {
+          background-color: rgb(236, 235, 235);
+        }
+      }
     }
+  }
+
+  .info-wrapper {
+    .intro {
+      &__heading {
+        width: 210px;
+        font-size: 27px;
+        font-family: "Titan One", sans-serif;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        span {
+          display: block;
+          font-size: 45px;
+          color: rgb(212, 20, 66);
+          line-height: 52px;
+        }
+      }
+
+      .products-btn {
+        font-size: 9px;
+        font-family: "DM Sans";
+        color: rgb(255, 255, 255);
+        border-radius: 14px;
+        background-color: rgb(212, 20, 66);
+        padding: 10px 18px;
+
+        &:hover {
+          background-color: rgb(199, 19, 62);
+        }
+      }
+
+      .how-btn {
+        font-size: 9px;
+        font-family: "DM Sans";
+        color: rgb(212, 20, 66);
+        background-color: rgb(255, 255, 255);
+        border-radius: 14px;
+        padding: 10px 16px;
+
+        &:hover {
+          background-color: rgb(236, 235, 235);
+        }
+      }
+    }
+  }
+
+  .quantity {
+    display: none;
+  }
+
+  .milk {
+    display: none;
   }
 }
 
-.intro {
-  width: 210px;
+@media (min-width:768px) {
+  .hdr {
+    padding: 36px 22px 36px 28px;
+    background-image: url("../images/img/header/icecream.png"), url("../images/img/header/tasty.png"), url("../images/img/header/circle-tab.png");
+    background-size: 152px, 184px, 323px;
+    background-position: right 250px top 62px, right 42px bottom, right 138px top 34px;
 
-  &__heading {
-    font-size: 27px;
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    @media (min-resolution:192dpi) {
+      background-image: url("../images/img/header/icecream@2x.png"), url("../images/img/header/tasty@2x.png"), url("../images/img/header/circle-tab@2x.png");
+    }
 
-    span {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .nav__global-list {
+      margin-bottom: 20px;
+
+      &-item {
+        &:nth-child(3) {
+          width: 230px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .buy-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 30px 0px 20px;
+      margin-bottom: 70px;
+
+      .intro {
+        &__heading {
+          width: 206px;
+          font-size: 24px;
+          line-height: unset;
+          margin-bottom: 20px;
+
+          span {
+            font-size: 36px;
+            line-height: 32px;
+          }
+        }
+
+        .products-btn {
+          font-size: 8px;
+          padding: 8px 14px;
+        }
+
+        .how-btn {
+          font-size: 8px;
+          padding: 8px 14px;
+        }
+      }
+
+
+      .quantity {
+        display: block;
+
+        &__list-item {
+          position: relative;
+
+          &:first-child {
+            margin-bottom: 20px;
+          }
+
+          &--object {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 28px;
+            font-family: "Titan One";
+            color: rgb(212, 20, 66);
+            text-transform: uppercase;
+            text-align: right;
+            z-index: 1;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              right: -8px;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background-color: rgb(255, 255, 255);
+              z-index: -1;
+            }
+
+            span {
+              display: block;
+              font-size: 8px;
+              font-family: "DM Sans";
+              color: rgb(255, 255, 255);
+              text-transform: lowercase;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .milk {
       display: block;
-      font-size: 45px;
-      color: rgb(212, 20, 66);
+      position: relative;
+      width: 114px;
+      padding-left: 136px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -41px;
+        left: 15px;
+        width: 124px;
+        height: 126px;
+        background-image: url("../images/img/header/milk.png");
+        background-size: cover;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+
+        @media (min-resolution:192dpi) {
+          background-image: url("../images/img/header/milk@2x.png");
+        }
+      }
+
+      &__text {
+        display: inline-block;
+        width: 114px;
+        font-size: 8px;
+        font-family: "DM Sans";
+        color: rgb(255, 255, 255);
+        line-height: 12px;
+        margin-bottom: 8px;
+      }
+
+      &__link-pic {
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url("../images/img/header/arrow.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
-  }
 
-  .products-btn {
-    font-size: 9px;
-    font-family: "DM Sans";
-    color: rgb(255, 255, 255);
-    border-radius: 14px;
-    background-color: rgb(212, 20, 66);
-    padding: 10px 18px;
+    #burger-menu__toggle {
+      opacity: 0;
 
-    &:hover {
-      background-color: rgb(199, 19, 62);
-    }
-  }
-
-  .how-btn {
-    font-size: 9px;
-    font-family: "DM Sans";
-    color: rgb(212, 20, 66);
-    background-color: rgb(255, 255, 255);
-    border-radius: 14px;
-    padding: 10px 16px;
-
-    &:hover {
-      background-color: rgb(236, 235, 235);
+      &:checked~.burger-menu__btn {
+        top: -32px;
+        right: -217px;
+      }
     }
   }
 }
-
-.icecream-picture-wrapper {
-  width: 342px;
-  height: 342px;
-  border-radius: 50%;
-  background-color: rgb(255, 165, 186);
-
-}
-
-
-// background-image: url(../images/img/header/icecream.png);
-// background-position: center;
-// background-repeat: no-repeat;
-
-// .icecream-picture {
-// }
-
-
-// .buy-btn {
-//   font-size: 15px;
-//   font-family: "DM Sans";
-//   font-weight: 700;
-//   color: rgb(212, 20, 66);
-//   background-color: rgb(255, 255, 255);
-//   padding: 12px 28px 12px 38px;
-//   border-radius: 21px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
-
-
-//   &__svg-chevron {
-//     fill: rgb(212, 20, 66);
-//     width: 12px;
-//     height: 12px;
-//     margin-left: 4px;
-//     margin-top: 2px;
-//   }
-
-//   &:hover {
-//     background-color: rgb(236, 235, 235);
-//   }
-// }

@@ -24,24 +24,24 @@
               <label class="burger-menu__btn" for="burger-menu__toggle">
                 <span></span>
               </label>
-              <ul class="burger-menu__box">
-                <li><button class="burger-buy-btn">
-                    Buy now
-                    <svg class="burger-buy-btn__svg-chevron">
-                      <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
-                    </svg>
-                  </button></li>
-                <li><a class="burger-menu__item" href="#">Home</a></li>
-                <li><a class="burger-menu__item" href="#">About us</a></li>
-                <li><a class="burger-menu__item" href="#">How it’s made?</a></li>
-                <li><a class="burger-menu__item" href="#">Our products</a></li>
-                <li><a class="burger-menu__item" href="#">Contact</a></li>
-              </ul>
+              <div class="burger-menu__wrapper">
+                <ul class="burger-menu__box">
+                  <li><button class="burger-buy-btn">
+                      Buy now
+                      <svg class="burger-buy-btn__svg-chevron">
+                        <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
+                      </svg>
+                    </button></li>
+                  <li><a class="burger-menu__item" href="#">Home</a></li>
+                  <li><a class="burger-menu__item" href="#">About us</a></li>
+                  <li><a class="burger-menu__item" href="#">How it’s made?</a></li>
+                  <li><a class="burger-menu__item" href="#">Our products</a></li>
+                  <li><a class="burger-menu__item" href="#">Contact</a></li>
+                </ul>
+              </div>
             </div>
 
           </div>
-        </li>
-        <li class="nav__global-list-item">
           <button class="buy-btn">
             Buy now
             <svg class="buy-btn__svg-chevron">
@@ -51,16 +51,31 @@
         </li>
       </ul>
     </nav>
-    <div class="intro">
-      <h2 class="intro__heading">Ice cream made with
-        <span>passion</span>
-      </h2>
-      <button class="products-btn">Products</button>
-      <button class="how-btn">How it’s made?</button>
+    <div class="info-wrapper">
+      <div class="intro">
+        <h2 class="intro__heading">Ice cream made with
+          <span>passion</span>
+        </h2>
+        <button class="products-btn">Products</button>
+        <button class="how-btn">How it’s made?</button>
+      </div>
+      <div class="quantity">
+        <ul class="quantity__list">
+          <li class="quantity__list-item">
+            <p class="quantity__list-item--object">16<span>cafes</span></p>
+          </li>
+          <li class="quantity__list-item">
+            <p class="quantity__list-item--object">23<span>food trucks</span></p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="icecream-picture-wrapper">
+    <div class="milk">
+      <p class="milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et</p>
+      <a href="#" class="milk__link-pic">
+        <p class="visually-hidden">Bio-Eco</p>
+      </a>
     </div>
   </div>
 </header>
-
-
