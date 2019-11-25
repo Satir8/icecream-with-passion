@@ -40,7 +40,8 @@ img {
 }
 
 a {
-  display: block;;
+  display: block;
+  ;
   text-decoration: none;
 }
 
@@ -53,7 +54,7 @@ h3 {
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
-  
+
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
@@ -63,16 +64,17 @@ h3 {
   overflow: hidden;
 }
 
-
 .container {
-  width: 290px;
+  width: 100%;
   margin: 0 auto;
 }
+
 @media (min-width:768px) {
   .container {
     width: 700px;
   }
 }
+
 @media (min-width:1280px) {
   .container {
     width: 1160px;
