@@ -208,6 +208,10 @@
       height: 34px;
       background-color: #ffa5ba;
       border-radius: 50%;
+
+      &:hover{
+        border: 2px solid blue;
+      }
     }
   }
 }
@@ -320,7 +324,8 @@
     .btn-franchise{
       margin-bottom: 0;
       width: 200px; 
-      padding: 14px 0; 
+      padding: 15px 0; 
+      font-size: 14px;
     }
   }
   // DOWN OF FOOTER
@@ -332,6 +337,7 @@
 
   .ftr__titles{
     width: 316px;
+    margin: 0;
   }
 
   .ftr__heading{
@@ -346,6 +352,7 @@
 
   .contact{
     width: 280px;
+    margin: 0;
   }
 
   .contact__phone{
@@ -361,3 +368,86 @@
     line-height: 28px;
   }
 }
+
+@media (min-width:1280px) {
+  .container {
+    width: 1160px;
+  }
+
+  .ftr__list{
+    padding-left: 22px;
+    padding-right: 22px;
+    
+    &-item{
+      width: 338px;
+    }
+
+    .card__content-list{
+      &--location{
+        font-size: 17px;
+        line-height: 28px;
+      }
+
+      &--description{
+        font-size: 17px;
+        line-height: 28px;
+      }
+
+      &--shrelude{
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      &--contact{
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .ftr__btns-wrapper {
+    margin-bottom: 150px;
+    
+    .btn-locations, 
+    .btn-franchise{ 
+      font-size: 15px;
+    }
+  }  
+  
+  .ftr__titles{
+    width: 480px;
+    margin-left: 24px;
+  }
+
+  .ftr__heading{
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .ftr__heading-subtitle{
+    font-size: 60px;
+    line-height: 52px;
+  }
+
+  .contact{
+    width: 350px;
+    margin-right: 24px;
+  } 
+  
+  .contact__phone{
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .ftr__bottom-copyright{
+    font-size: 15px;
+  }  
+  
+  .ftr__list{
+    background-image: url(../../images/img/footer/sectionbg2.png);
+    background-repeat: no-repeat;
+    background-size: 160% auto;
+    background-position: center;
+  }
+}
+
