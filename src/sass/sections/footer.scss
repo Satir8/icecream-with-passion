@@ -1,11 +1,16 @@
 .ftr {
   background-color: rgb(255, 245, 247);
-  padding: 0px 32px;
+
+  &__wrapper{
+    padding: 0px 32px;
+  }
 
   &__list {
     width: 252px;
     margin: 0 auto;
     margin-bottom: 54px;
+    position: relative;
+    top: -100px;
 
     .card {
       border-radius: 25px;
@@ -185,9 +190,15 @@
   &__list{
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 34px;
+    width: 170px;
     margin-bottom: 48px;
+
+    &-wraper{
+      display: flex;
+      justify-content: flex-end;
+    }
 
     &-link{
       display: flex;
@@ -212,6 +223,7 @@
   text-align: center;
   @extend %main-font-500;
   line-height: 28px;
+  padding-bottom: 50px;
 }
 
 .contact__phone a{
@@ -219,16 +231,6 @@
   color: #d92f58;
 }
 
-.ftr__bottom::before{
-  display: block;
-  margin: 0 auto;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: #ebe2e4;
-  margin-top: 48px;
-  margin-bottom: 24px;
-}
 
 .ftr__bottom{
   display: block;
@@ -236,8 +238,96 @@
   text-align: center;
   @extend %main-font-400;
   color: #b3a0a4;
-
+  border-top: 2px solid #b3a0a4;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  
   &-span{
     display: block;
+    
   }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 700px;
+  }
+
+  .ftr__wrapper{
+    padding: 0;
+  }
+
+  .ftr__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    .card__content-list{
+      &--label {
+        font-size: 17px;
+        line-height: 31px;
+      }
+
+      &--location{
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      &--description{
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &--shrelude{
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+
+      &--contact{
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .card:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    
+    &-item {
+      width: 222px;
+    }
+  }
+
+  .ftr__btns-block{
+    display: block;
+    margin: 0 auto;
+    width: 410px;
+    margin-bottom: 164px;
+  }
+
+  .ftr__btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    align-items: center;
+  }
+
+  .ftr__btns-wrapper {
+    margin-bottom: 110px;
+  
+    .btn-locations, 
+    .btn-franchise{
+      margin-bottom: 0;
+      width: 200px; 
+      padding: 14px 0; 
+    }
+  }
+  
+  .down-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 }

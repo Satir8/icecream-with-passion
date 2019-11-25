@@ -1,7 +1,7 @@
 <footer class="ftr">
-  <div class="container">
+  <div class="ftr__wrapper container">
 
-    <ul class="ftr__list">
+    <ul class="ftr__list container">
 
       <li class="ftr__list-item card">
         <ul class="card__content-list">
@@ -71,27 +71,31 @@
 
     </ul>
 
-    <div class="ftr__btns-wrapper">
-      <button class="btn-locations">
-        Our Locations
-        <svg class="btn-locations__svg-chevron">
-            <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
-          </svg>
-      </button>
-      <button class="btn-franchise">
-        Franchise
-        <svg class="btn-franchise__svg-chevron">
-            <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
-          </svg>
-      </button>
+    <div class="ftr__btns-block">
+        <div class="ftr__btns-wrapper">
+            <button class="btn-locations">
+              Our Locations
+              <svg class="btn-locations__svg-chevron">
+                  <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+            <button class="btn-franchise">
+              Franchise
+              <svg class="btn-franchise__svg-chevron">
+                  <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+          </div>
     </div>
     <!-- DOWN OF FOOTER -->
-    <dic class="ftr__titles">
+    <div class="down-wrapper">
+    <div class="ftr__titles">
       <h2 class="ftr__heading">Homemade ice cream made
         <span class="ftr__heading-subtitle">with passion</span>
       </h2>
-    </dic>
+    </div>
     <div class="contact">
+      <div class="contact__list-wraper">
       <ul class="contact__list">
         <li class="contact__list-item">
           <a href="#" class="contact__list-link">
@@ -116,13 +120,15 @@
         </li>
       </ul>
     </div>
+    </div>
       <h5 class="contact__phone">
         Feel free to contact <a href="+380987238805">+38-098-723-88-05</a>
       </h5>
-    
+    </div>
+  </div>
     <div class="ftr__bottom">
       <p class="ftr__bottom-copyright">© 2019 - IceCream.<span class="ftr__bottom-span">All Rights Reserved</span></p>
     </div>
 
-  </div>
+  
 </footer>
