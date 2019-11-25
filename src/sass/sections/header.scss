@@ -4,7 +4,7 @@
   padding: 6px 14px 156px 14px;
   background-image: url("../images/img/header/icecream.png"), url("../images/img/header/circle.png");
   background-size: 169px, 283px;
-  background-position: right 34px top 92px, right top 80px;
+  background-position: right 34px top 100px, right top 80px;
   background-repeat: no-repeat;
 
   @media (min-resolution:192dpi) {
@@ -21,11 +21,7 @@
     margin-bottom: 140px;
 
     &-item {
-      &:nth-child(2) {
-        display: none;
-      }
-
-      &:nth-child(4) {
+      .nav-list {
         display: none;
       }
 
@@ -39,10 +35,6 @@
         @media (min-resolution:192dpi) {
           background-image: url("../images/img/header/logo@2x.png");
         }
-      }
-
-      .nav-list {
-        display: none;
       }
 
       .navigation__burger {
@@ -301,7 +293,7 @@
       margin-bottom: 20px;
 
       &-item {
-        &:nth-child(3) {
+        &:nth-child(2) {
           width: 230px;
           display: flex;
           justify-content: space-between;
@@ -338,6 +330,7 @@
         .products-btn {
           font-size: 8px;
           padding: 8px 14px;
+          margin-right: 6px;
         }
 
         .how-btn {
@@ -351,8 +344,6 @@
         display: block;
 
         &__list-item {
-          position: relative;
-
           &:first-child {
             margin-bottom: 20px;
           }
@@ -442,6 +433,135 @@
       &:checked~.burger-menu__btn {
         top: -32px;
         right: -217px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px) {
+  .hdr {
+    padding: 38px 28px 58px 34px;
+    background-size: 240px, 295px, 537px;
+    background-position: right 416px top 110px, right 70px bottom, right 230px top 54px;
+
+    .navigation__burger {
+      display: none;
+    }
+
+    .nav__global-list {
+      margin-bottom: 80px;
+
+      &-item {
+        &:nth-child(1) {
+          width: 832px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &:nth-child(2) {
+          display: flex;
+          justify-content: flex-end;
+          width: auto;
+        }
+      }
+
+      .nav-list {
+        width: 546px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__link {
+          a {
+            font-size: 15px;
+            font-family: "DM Sans";
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+
+            &:hover {
+              color: rgb(212, 20, 66);
+            }
+          }
+        }
+      }
+    }
+
+    .info-wrapper {
+      padding: 0px 72px 0px 46px;
+      margin-bottom: 112px;
+
+      .intro {
+        &__heading {
+          width: 272px;
+          font-size: 37px;
+          margin: 10px 0px 26px 0px;
+
+          span {
+            font-size: 57px;
+            line-height: 57px;
+          }
+        }
+
+        .products-btn {
+          font-size: 13px;
+          padding: 12px 24px;
+          border-radius: 24px;
+          margin-right: 8px;
+        }
+
+        .how-btn {
+          font-size: 13px;
+          padding: 12px 24px;
+          border-radius: 24px;
+        }
+      }
+
+
+      .quantity {
+        &__list-item {
+          &:first-child {
+            margin-bottom: 30px;
+          }
+
+          &--object {
+            font-size: 45px;
+
+            &::before {
+              top: -2px;
+              right: -14px;
+              width: 28px;
+              height: 28px;
+            }
+
+            span {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .milk {
+      padding-left: 240px;
+
+      &::before {
+        top: -64px;
+        left: 32px;
+        width: 190px;
+        height: 200px;
+      }
+
+      &__text {
+        width: 182px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 18px;
+      }
+
+      &__link-pic {
+        width: 27px;
+        height: 27px;
       }
     }
   }
