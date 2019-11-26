@@ -1,0 +1,210 @@
+<<<<<<< HEAD
+=======
+// SEREGA
+.how {
+  background-color: #fff5f7;
+  background-image: url('../images/how/sectionbg1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 130px;
+  padding-bottom: 110px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  &__img {
+    margin-bottom: 100px;
+  }
+
+  &__title,
+  &__content {
+    padding-left: 24px;
+  }
+
+  &__title {
+    @extend %main-font-400;
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 19px;
+  }
+
+  &__content {
+    @extend %main-font-400;
+    color: #907e82;
+    margin-bottom: 20px;
+  }
+
+  &__list-item {
+    padding-top: 60px;
+    background-repeat: no-repeat;
+
+    &:first-child {
+      background-image: url('../images/how/icon1.png');
+    }
+
+    &:nth-child(2) {
+      background-image: url('../images/how/icon2.png');
+    }
+
+    &:last-child {
+      background-image: url('../images/how/icon3.png');
+    }
+  }
+}
+
+.section {
+
+  &__subtitle,
+  &__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFA5BA;
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 52px;
+    color: #D41442;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    @extend %main-font-700;
+    color: #d41442;
+    line-height: 41px;
+    padding-left: 30px;
+    width: 158px;
+    height: 41px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.how__list-item>* {
+  text-align: left;
+  padding-left: 0;
+}
+
+.how__list-item .section__title {
+  margin-bottom: 16px;
+}
+
+.how__list-item:last-child .how__title {
+  margin-bottom: 0;
+}
+
+.icon-chevron {
+  width: 10px;
+  height: 10px;
+  fill: #d41442;
+  position: absolute;
+  top: 16px;
+  right: 30px;
+}
+
+.photos {
+  padding-bottom: 40px;
+}
+
+@media (min-width:768px) {
+  .how {
+    padding-bottom: 140px;
+
+    &__wrap,
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      flex: 1 0 340px;
+      padding-right: 40px;
+    }
+
+    &__wrap-text {
+      margin-top: 60px;
+    }
+
+    &__title,
+    &__content {
+      padding-left: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__content:last-of-type {
+      margin-bottom: 60px;
+    }
+
+    &__list-item {
+      width: 160px;
+    }
+  }
+
+  .section {
+    &__title {
+      font-size: 51px;
+      margin-bottom: 70px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+    }
+
+    &__btn {
+      margin-left: 0;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width:1280px) {
+  .how {
+
+    &__title,
+    &__content {
+      padding-left: 0;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    &__img {
+      flex: 1 0 600px;
+      padding-right: 70px;
+    }
+
+    &__list-item {
+      width: 270px;
+    }
+  }
+
+  .section {
+    &__title {
+      font-size: 60px;
+      margin-bottom: 118px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+    }
+  }
+}
+>>>>>>> e083c2592bad22ade63617eef3589b928d414949
