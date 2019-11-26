@@ -58,7 +58,7 @@
 
 .icecream-pic {
   position: absolute;
-  bottom: 384px;
+  bottom: 364px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -151,7 +151,7 @@
   }
 
   .icecream-pic {
-    margin-bottom: 62px;
+    margin-bottom: 28px;
   }
 
   .circle {
@@ -198,5 +198,9 @@
     span {
       display: none;
     }
+  }
+
+  .icecream-pic {
+    bottom: 350px;
   }
 }
