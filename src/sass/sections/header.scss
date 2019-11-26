@@ -44,6 +44,12 @@
           #burger-menu__toggle {
             opacity: 0;
 
+            &:checked~.burger-menu__btn {
+              position: fixed;
+              top: 32px;
+              right: 14px;
+            }
+
             &:checked~.burger-menu__btn>span {
               transform: rotate(45deg);
               background-color: #ffffff;
