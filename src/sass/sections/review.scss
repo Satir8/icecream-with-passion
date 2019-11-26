@@ -1,0 +1,143 @@
+// SEREGA
+.review {
+  padding: 40px 35px 186px 35px;
+
+  &__photo {
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    @extend %main-font-500;
+    line-height: 32px;
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-image: url('../images/review/blockquote.png');
+      opacity: .3;
+      width: 54px;
+      height: 41px;
+      position: absolute;
+      top: 35px;
+      left: 60px;
+    }
+
+    span {
+      display: inline-block;
+      background: repeating-linear-gradient(#fafafa, #fafafa 31px, #e1e1e1 31px, #e1e1e1 32px);
+      padding-left: 0;
+      padding-bottom: 8px;
+      width: 140px;
+    }
+  }
+
+  &__decoration {
+    margin-bottom: 24px;
+    text-align: center;
+
+    &-dot {
+      display: inline-block;
+      border-radius: 50%;
+      background-color: rgb(212, 20, 66);
+      width: 5px;
+      height: 5px;
+      margin: 0 5px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    text-align: center;
+
+    &-dot {
+      display: inline-block;
+      border-radius: 50%;
+      background-color: rgb(217, 217, 217);
+      width: 12px;
+      height: 12px;
+      margin: 0 9px;
+      cursor: pointer;
+
+      &:hover,
+      .active {
+        border-radius: 0;
+        background: url('../images/review/home.png');
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 13px;
+        margin: 0 7px;
+      }
+    }
+  }
+
+  &__name {
+    @extend %main-font-400;
+    color: #000;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .review {
+    padding-bottom: 200px;
+
+    &__text {
+      font-size: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+      &:before {
+        left: 30px;
+      }
+    }
+
+    &__text span {
+      width: 510px;
+    }
+
+    &__name {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .review {
+    padding-bottom: 220px;
+
+    &__text {
+      font-size: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: 70px;
+      margin-right: 70px;
+
+      &:before {
+        left: 90px;
+      }
+    }
+
+    &__text span {
+      width: 820px;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+  }
+}

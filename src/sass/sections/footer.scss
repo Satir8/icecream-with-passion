@@ -1,0 +1,459 @@
+.ftr {
+  background-color: rgb(255, 245, 247);
+
+  &__wrapper{
+    padding: 0px 32px;
+  }
+
+  &__list {
+    width: 252px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    position: relative;
+    top: -100px;
+
+    .card {
+      border-radius: 25px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+      padding: 50px 36px 46px 36px;
+
+      &:nth-child(2) .card__content-list--label {
+        background-color: rgb(193, 226, 151);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &__content-list {
+        &--part:nth-child(2) {
+          padding: 32px 0px;
+          border-top: 1px solid rgba(0, 0, 0, 0.078);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.078);
+        }
+
+        &--part:nth-child(3) {
+          padding-top: 30px;
+        }
+
+        &--label {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 500;
+          font-family: "DM Sans";
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          border-radius: 5px;
+          background-color: rgb(239, 209, 165);
+          padding: 2px 15px 1px 15px;
+          margin-bottom: 34px;
+        }
+
+        &--location {
+          font-size: 13px;
+          font-family: "DM Sans";
+          font-weight: 700;
+          color: rgb(0, 0, 0);
+          margin-bottom: 18px;
+        }
+
+        &--description {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(144, 126, 130);
+          padding-right: 4px;
+          margin-bottom: 30px;
+        }
+
+        &--shrelude {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(0, 0, 0);
+
+          &:not(:nth-child(2)) {
+            margin-bottom: 14px;
+          }
+
+          span {
+            display: block;
+            font-size: 13px;
+            font-family: "DM Sans";
+            color: rgb(255, 165, 186);
+            line-height: 20px;
+          }
+        }
+
+        &--contact a {
+          font-size: 13px;
+          font-family: "DM Sans";
+          color: rgb(144, 126, 130);
+        }
+      }
+    }
+  }
+
+
+  &__btns-wrapper {
+    margin-bottom: 110px;
+  
+    .btn-locations {
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      background-color: rgb(212, 20, 66);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 14px;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+      &__svg-chevron {
+        fill: #ffffff;
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(199, 19, 62);
+      }
+    }
+
+    .btn-franchise {
+      font-size: 14px;
+      font-family: "DM Sans";
+      font-weight: 700;
+      color: rgb(212, 20, 66);
+      background-color: rgb(255, 255, 255);
+      width: 158px;
+      padding: 10px 0px;
+      border-radius: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
+
+
+      &__svg-chevron {
+        fill: rgb(212, 20, 66);
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+      }
+
+      &:hover {
+        background-color: rgb(236, 235, 235);
+      }
+    }
+  }
+}
+// DOWN OF FOOTER
+.ftr__titles{
+  width: 254px;
+  display: block;
+  margin: 0 auto;
+}
+
+.ftr__heading{
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  color: #ffa5ba;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+
+  &-subtitle{
+    display: block;
+    font-size: 35px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    color: #d41442;
+    margin-top: 30px;
+  }
+}
+
+.contact{
+  width: 254px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    height: 34px;
+    width: 170px;
+    margin-bottom: 48px;
+
+    &-wraper{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+      background-color: #ffa5ba;
+      border-radius: 50%;
+
+      &:hover{
+        background-color: rgb(199, 19, 62);
+      }
+    }
+  }
+}
+
+.contact__list-item:nth-child(2) .contact__svg-android {
+  margin-right: 2px;
+}
+
+.contact__svg-android{
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.contact__phone{
+  text-align: center;
+  @extend %main-font-500;
+  line-height: 28px;
+  padding-bottom: 50px;
+}
+
+.contact__phone a{
+  display: inline-block;
+  color: #d92f58;
+}
+
+
+.ftr__bottom{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  @extend %main-font-400;
+  color: #b3a0a4;
+  border-top: 2px solid #b3a0a4;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  
+  &-span{
+    display: block;
+    
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 700px;
+  }
+
+  .ftr__wrapper{
+    padding: 0;
+  }
+
+  .ftr__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    .card__content-list{
+      &--label {
+        font-size: 17px;
+        line-height: 31px;
+      }
+
+      &--location{
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      &--description{
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &--shrelude{
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+
+      &--contact{
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .card:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    
+    &-item {
+      width: 222px;
+    }
+  }
+
+  .ftr__btns-block{
+    display: block;
+    margin: 0 auto;
+    width: 420px;
+    margin-bottom: 164px;
+  }
+
+  .ftr__btns-wrapper{
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ftr__btns-wrapper {
+    margin-bottom: 110px;
+  
+    .btn-locations, 
+    .btn-franchise{
+      margin-bottom: 0;
+      width: 200px; 
+      padding: 15px 0; 
+      font-size: 14px;
+    }
+  }
+  // DOWN OF FOOTER
+  .down-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .ftr__titles{
+    width: 316px;
+    margin: 0;
+  }
+
+  .ftr__heading{
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .ftr__heading-subtitle{
+    font-size: 51px;
+    line-height: 49px;
+  }
+
+  .contact{
+    width: 280px;
+    margin: 0;
+
+    &__list {
+      margin-bottom: 60px;
+    }
+  }
+
+  .contact__phone{
+    font-size: 14px;
+  }
+  
+  .ftr__bottom-span{
+    display: inline-block;
+  }
+
+  .ftr__bottom-copyright{
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width:1280px) {
+  .container {
+    width: 1160px;
+  }
+
+  .ftr__list{
+    padding-left: 22px;
+    padding-right: 22px;
+    
+    &-item{
+      width: 338px;
+    }
+
+    .card__content-list{
+      &--location{
+        font-size: 17px;
+        line-height: 28px;
+      }
+
+      &--description{
+        font-size: 17px;
+        line-height: 28px;
+      }
+
+      &--shrelude{
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      &--contact{
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .ftr__btns-wrapper {
+    margin-bottom: 150px;
+    
+    .btn-locations, 
+    .btn-franchise{ 
+      font-size: 15px;
+    }
+  }  
+  
+  .ftr__titles{
+    width: 480px;
+    margin-left: 24px;
+  }
+
+  .ftr__heading{
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .ftr__heading-subtitle{
+    font-size: 60px;
+    line-height: 52px;
+  }
+
+  .contact{
+    width: 350px;
+    margin-right: 24px;
+  } 
+  
+  .contact__phone{
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .ftr__bottom-copyright{
+    font-size: 15px;
+  }  
+  
+  .ftr{
+    background-image: url(./../images/img/footer/sectionbg2.png);
+    background-repeat: no-repeat;
+    background-size: 156% auto;
+    background-position: top center;
+  }
+}
+
