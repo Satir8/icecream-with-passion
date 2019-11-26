@@ -86,6 +86,10 @@
     position: relative;
     margin-left: 24px;
     margin-bottom: 40px;
+
+    &:hover {
+      background-color: rgb(236, 235, 235);
+    }
   }
 }
 
