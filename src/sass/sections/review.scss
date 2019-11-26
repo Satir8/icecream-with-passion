@@ -1,6 +1,6 @@
 // SEREGA
 .review {
-  padding: 40px 35px;
+  padding: 40px 35px 186px 35px;
 
   &__photo {
     text-align: center;
@@ -92,6 +92,8 @@
 
 @media (min-width: 768px) {
   .review {
+    padding-bottom: 200px;
+
     &__text {
       font-size: 15px;
       padding-left: 50px;
@@ -116,6 +118,8 @@
 
 @media (min-width: 1280px) {
   .review {
+    padding-bottom: 220px;
+
     &__text {
       font-size: 15px;
       padding-left: 50px;

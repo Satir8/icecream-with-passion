@@ -237,6 +237,7 @@
       }
 
       .products-btn {
+        display: inline-block;
         font-size: 9px;
         font-family: "DM Sans";
         color: rgb(255, 255, 255);
@@ -250,6 +251,7 @@
       }
 
       .how-btn {
+        display: inline-block;
         font-size: 9px;
         font-family: "DM Sans";
         color: rgb(212, 20, 66);
@@ -330,7 +332,7 @@
         .products-btn {
           font-size: 8px;
           padding: 8px 14px;
-          margin-right: 6px;
+          margin-right: 4px;
         }
 
         .how-btn {

@@ -188,7 +188,6 @@
   position: relative;
 
   &__list{
-
     display: flex;
     justify-content: space-around;
     height: 34px;
@@ -210,12 +209,15 @@
       border-radius: 50%;
 
       &:hover{
-        border: 2px solid blue;
+        background-color: rgb(199, 19, 62);
       }
     }
   }
 }
 
+.contact__list-item:nth-child(2) .contact__svg-android {
+  margin-right: 2px;
+}
 
 .contact__svg-android{
   width: 20px;
@@ -306,14 +308,14 @@
   .ftr__btns-block{
     display: block;
     margin: 0 auto;
-    width: 410px;
+    width: 420px;
     margin-bottom: 164px;
   }
 
   .ftr__btns-wrapper{
+    width: 420px;
     display: flex;
     justify-content: space-between;
-    width: 410px;
     align-items: center;
   }
 
@@ -353,6 +355,10 @@
   .contact{
     width: 280px;
     margin: 0;
+
+    &__list {
+      margin-bottom: 60px;
+    }
   }
 
   .contact__phone{
