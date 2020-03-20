@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/styles.css">
     <!-- endinject -->
   </head>
 
@@ -18,20 +17,21 @@
               <nav class="nav">
                 <ul class="nav__global-list">
                   <li class="nav__global-list-item">
-                    <div class="logo"><a href="#" class="logo">
+                    <div class="logo">
+                      <a href="#" class="logo">
                         <h1 class="visually-hidden">IceCream logo</h1>
-                      </a></div>
-                      <ul class="nav-list">
-                        <li class="nav-list__link"><a href="#">Home</a></li>
-                        <li class="nav-list__link"><a href="#">About us</a></li>
-                        <li class="nav-list__link"><a href="#">How it’s made?</a></li>
-                        <li class="nav-list__link"><a href="#">Our products</a></li>
-                        <li class="nav-list__link"><a href="#">Contact</a></li>
-                      </ul>
+                      </a>
+                    </div>
+                    <ul class="nav-list">
+                      <li class="nav-list__link"><a href="#">Home</a></li>
+                      <li class="nav-list__link"><a href="#about">About us</a></li>
+                      <li class="nav-list__link"><a href="#how">How it’s made?</a></li>
+                      <li class="nav-list__link"><a href="#products">Our products</a></li>
+                      <li class="nav-list__link"><a href="#contact">Contact</a></li>
+                    </ul>
                   </li>
                   <li class="nav__global-list-item">
                     <div class="navigation__burger">
-          
                       <div class="burger-menu">
                         <input id="burger-menu__toggle" type="checkbox" />
                         <label class="burger-menu__btn" for="burger-menu__toggle">
@@ -39,26 +39,41 @@
                         </label>
                         <div class="burger-menu__wrapper">
                           <ul class="burger-menu__box">
-                            <li><button class="burger-buy-btn">
+                            <li>
+                              <button class="burger-buy-btn">
                                 Buy now
                                 <svg class="burger-buy-btn__svg-chevron">
-                                  <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
+                                  <use
+                                    xlink:href="./images/icons/sprite.svg#icon-chevron-right"
+                                  ></use>
                                 </svg>
-                              </button></li>
+                              </button>
+                            </li>
                             <li><a class="burger-menu__item" href="#">Home</a></li>
-                            <li><a class="burger-menu__item" href="#">About us</a></li>
-                            <li><a class="burger-menu__item" href="#">How it’s made?</a></li>
-                            <li><a class="burger-menu__item" href="#">Our products</a></li>
-                            <li><a class="burger-menu__item" href="#">Contact</a></li>
+                            <li>
+                              <a class="burger-menu__item" href="#about">About us</a>
+                            </li>
+                            <li>
+                              <a class="burger-menu__item" href="#how">How it’s made?</a>
+                            </li>
+                            <li>
+                              <a class="burger-menu__item" href="#products"
+                                >Our products</a
+                              >
+                            </li>
+                            <li>
+                              <a class="burger-menu__item" href="#contact">Contact</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
-          
                     </div>
                     <button class="buy-btn">
                       Buy now
                       <svg class="buy-btn__svg-chevron">
-                        <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
+                        <use
+                          xlink:href="./images/icons/sprite.svg#icon-chevron-right"
+                        ></use>
                       </svg>
                     </button>
                   </li>
@@ -66,11 +81,13 @@
               </nav>
               <div class="info-wrapper">
                 <div class="intro">
-                  <h2 class="intro__heading">Ice cream made with
+                  <h2 class="intro__heading">
+                    Ice cream made with
                     <span>passion</span>
                   </h2>
-                  <a class="products-btn">Products</a>
-                  <a class="how-btn">How it’s made?</a>
+                  <a class="products-btn" href="#products">Products</a>
+          
+                  <a class="how-btn" href="#how">How it’s made?</a>
                 </div>
                 <div class="quantity">
                   <ul class="quantity__list">
@@ -78,14 +95,18 @@
                       <p class="quantity__list-item--object">16<span>cafes</span></p>
                     </li>
                     <li class="quantity__list-item">
-                      <p class="quantity__list-item--object">23<span>food trucks</span></p>
+                      <p class="quantity__list-item--object">
+                        23<span>food trucks</span>
+                      </p>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="milk">
-                <p class="milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et</p>
+                <p class="milk__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et
+                </p>
                 <a href="#" class="milk__link-pic">
                   <p class="visually-hidden">Bio-Eco</p>
                 </a>
@@ -93,77 +114,114 @@
             </div>
           </header>
         <main class="main">
-          <section class="products">
-              <div class="container">
-                  <h2 class="section__title"><span class="section__subtitle">100% Natural</span>PRODUCTS</h2>
-                  <ul class="products__list">
-                      <li class="products__item pink">
-                          <picture class="picture">
-                              <img src="./images/img/products/home-pic1.png" alt="icecream" class="icecream-pic pinkpic">
-                          </picture>
-                          <h3 class="icecream-title">ICE CREAM</h3>
-                          <div class="points">
-                              <span class="point"></span>
-                              <span class="point"></span>
-                              <span class="point"></span>
-                          </div>
-                          <p class="icecream-text">Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do eiusmod tempor
-                              incidi&shy;dunt ut labore et.<span> dolore magna aliqua facilisis.</span></p>
-                          <button class="circle"></button>
-                      </li>
+          <section class="products" id="products">
+            <div class="container">
+              <h2 class="section__title">
+                <span class="section__subtitle">100% Natural</span>PRODUCTS
+              </h2>
+              <ul class="products__list">
+                <li class="products__item pink">
+                  <picture class="picture">
+                    <img
+                      src="./images/img/products/home-pic1.png"
+                      alt="icecream"
+                      class="icecream-pic pinkpic"
+                    />
+                  </picture>
+                  <h3 class="icecream-title">ICE CREAM</h3>
+                  <div class="points">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <p class="icecream-text">
+                    Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do
+                    eiusmod tempor incidi&shy;dunt ut labore et.<span>
+                      dolore magna aliqua facilisis.</span
+                    >
+                  </p>
+                  <button class="circle"></button>
+                </li>
           
-                      <li class="products__item brown">
-                          <picture class="picture">
-                              <img src="./images/img/products/home-pic2.png" alt="icecream" class="icecream-pic brownpic">
-                          </picture>
-                          <h3 class="icecream-title">ice coffee</h3>
-                          <div class="points">
-                              <span class="point"></span>
-                              <span class="point"></span>
-                              <span class="point"></span>
-                          </div>
-                          <p class="icecream-text">Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do eiusmod tempor
-                              incidi&shy;dunt ut labore et.<span> dolore magna aliqua facilisis.</span></p>
-                              <button class="circle"></button>
-                      </li>
-                      <li class="products__item green">
-                          <picture class="picture">
-                              <img src="./images/img/products/home-pic3.png" alt="icecream" class="icecream-pic greenpic">
-                          </picture>
-                          <h3 class="icecream-title">milkshakes</h3>
-                          <div class="points">
-                              <span class="point"></span>
-                              <span class="point"></span>
-                              <span class="point"></span>
-                          </div>
-                          <p class="icecream-text">Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do eiusmod tempor
-                              incidi&shy;dunt ut labore et.<span> dolore magna aliqua facilisis.</span></p>
-                              <button class="circle"></button>
-                      </li>
-          
-                  </ul>
-              </div>
+                <li class="products__item brown">
+                  <picture class="picture">
+                    <img
+                      src="./images/img/products/home-pic2.png"
+                      alt="icecream"
+                      class="icecream-pic brownpic"
+                    />
+                  </picture>
+                  <h3 class="icecream-title">ice coffee</h3>
+                  <div class="points">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <p class="icecream-text">
+                    Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do
+                    eiusmod tempor incidi&shy;dunt ut labore et.<span>
+                      dolore magna aliqua facilisis.</span
+                    >
+                  </p>
+                  <button class="circle"></button>
+                </li>
+                <li class="products__item green">
+                  <picture class="picture">
+                    <img
+                      src="./images/img/products/home-pic3.png"
+                      alt="icecream"
+                      class="icecream-pic greenpic"
+                    />
+                  </picture>
+                  <h3 class="icecream-title">milkshakes</h3>
+                  <div class="points">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <p class="icecream-text">
+                    Loretm ipsum dolor sit amet, consectetur adipi&shy;scing elit, sed do
+                    eiusmod tempor incidi&shy;dunt ut labore et.<span>
+                      dolore magna aliqua facilisis.</span
+                    >
+                  </p>
+                  <button class="circle"></button>
+                </li>
+              </ul>
+            </div>
           </section>
           <!-- SEREGA -->
-          <section class="how">
+          <section class="how" id="how">
             <div class="container">
               <h2 class="section__title">
                 <span class="section__subtitle">Tradition and love</span>How it’s made?
               </h2>
               <div class="how__wrap">
                 <div class="how__img">
-                  <img src="./images/how/home-pic4.png" alt=""
-                    srcset="./images/how/home-pic4.png 1x, ./images/how/home-pic4@2x.png 2x">
+                  <img
+                    src="./images/how/home-pic4.png"
+                    alt=""
+                    srcset="
+                      ./images/how/home-pic4.png    1x,
+                      ./images/how/home-pic4@2x.png 2x
+                    "
+                  />
                 </div>
                 <div class="how__wrap-text">
-                  <h3 class="how__title">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-                    lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</h3>
-                  <p class="how__content">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-                    orci
-                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa
-                    nibh, tincidunt.</p>
+                  <h3 class="how__title">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+                    justo fringilla.
+                  </h3>
+                  <p class="how__content">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                    suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.
+                  </p>
                   <p class="how__content">Aliquam erat volutpat. Aenean accumsan.</p>
-                  <a href="" class="section__btn">Read more
+                  <a href="" class="section__btn"
+                    >Read more
                     <svg class="icon-chevron">
                       <use href="./images/icons/sprite.svg#icon-chevron-right"></use>
                     </svg>
@@ -173,29 +231,52 @@
               <ul class="how__list content-left">
                 <li class="how__list-item">
                   <h2 class="section__title">721</h2>
-                  <h3 class="how__title">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</h3>
+                  <h3 class="how__title">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </h3>
                 </li>
                 <li class="how__list-item">
                   <h2 class="section__title">16kg</h2>
-                  <h3 class="how__title">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</h3>
+                  <h3 class="how__title">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </h3>
                 </li>
                 <li class="how__list-item">
                   <h2 class="section__title">84</h2>
-                  <h3 class="how__title">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</h3>
+                  <h3 class="how__title">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </h3>
                 </li>
               </ul>
             </div>
           </section>
           <section class="photos">
-            <img src="./images/how/home-pic5.jpg" alt="" srcset="./images/how/home-pic5.jpg 1x, ./images/how/home-pic5@2x.jpg 2x">
+            <img
+              src="./images/how/home-pic5.jpg"
+              alt=""
+              srcset="./images/how/home-pic5.jpg 1x, ./images/how/home-pic5@2x.jpg 2x"
+            />
           </section>
-          <section class="review">
+          <section class="review" id="about">
             <div class="container">
-              <img src="./images/review/testimonials1.jpg" alt="" width="85" height="85" class="review__photo"
-                srcset="./images/review/testimonials1.jpg 1x, ./images/review/testimonials1@2x.jpg 2x">
-              <p class="review__text"><span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                  hendrerit
-                  nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel <br>risus.</span></p>
+              <img
+                src="./images/review/testimonials1.jpg"
+                alt=""
+                width="85"
+                height="85"
+                class="review__photo"
+                srcset="
+                  ./images/review/testimonials1.jpg    1x,
+                  ./images/review/testimonials1@2x.jpg 2x
+                "
+              />
+              <p class="review__text">
+                <span
+                  >Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                  Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum
+                  primis in nibh vel <br />risus.</span
+                >
+              </p>
               <div class="review__decoration">
                 <span class="review__decoration-dot"></span>
                 <span class="review__decoration-dot"></span>
@@ -212,19 +293,23 @@
         </main>
             <footer class="ftr">
               <div class="ftr__wrapper container">
-            
-                <ul class="ftr__list container">
-            
+                <ul class="ftr__list container" id="contact">
                   <li class="ftr__list-item card">
                     <ul class="card__content-list">
                       <li class="card__content-list--part">
                         <h4 class="card__content-list--label">Cafe</h4>
                         <h5 class="card__content-list--location">Chicago</h5>
-                        <p class="card__content-list--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="card__content-list--description">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                       </li>
                       <li class="card__content-list--part">
-                        <p class="card__content-list--shrelude">Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                        <p class="card__content-list--shrelude">Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                        <p class="card__content-list--shrelude">
+                          Monday - Friday<span>06:00 AM - 10:00 PM</span>
+                        </p>
+                        <p class="card__content-list--shrelude">
+                          Saturday - Sunday<span>08:00 AM - 16:00 PM</span>
+                        </p>
                       </li>
                       <li class="card__content-list--part">
                         <p class="card__content-list--contact">
@@ -242,11 +327,17 @@
                       <li class="card__content-list--part">
                         <h4 class="card__content-list--label">FOODTRUCK</h4>
                         <h5 class="card__content-list--location">Los Angeles</h5>
-                        <p class="card__content-list--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="card__content-list--description">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                       </li>
                       <li class="card__content-list--part">
-                        <p class="card__content-list--shrelude">Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                        <p class="card__content-list--shrelude">Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                        <p class="card__content-list--shrelude">
+                          Monday - Friday<span>06:00 AM - 10:00 PM</span>
+                        </p>
+                        <p class="card__content-list--shrelude">
+                          Saturday - Sunday<span>08:00 AM - 16:00 PM</span>
+                        </p>
                       </li>
                       <li class="card__content-list--part">
                         <p class="card__content-list--contact">
@@ -264,11 +355,17 @@
                       <li class="card__content-list--part">
                         <h4 class="card__content-list--label">Cafe</h4>
                         <h5 class="card__content-list--location">New York</h5>
-                        <p class="card__content-list--description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="card__content-list--description">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                       </li>
                       <li class="card__content-list--part">
-                        <p class="card__content-list--shrelude">Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                        <p class="card__content-list--shrelude">Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                        <p class="card__content-list--shrelude">
+                          Monday - Friday<span>06:00 AM - 10:00 PM</span>
+                        </p>
+                        <p class="card__content-list--shrelude">
+                          Saturday - Sunday<span>08:00 AM - 16:00 PM</span>
+                        </p>
                       </li>
                       <li class="card__content-list--part">
                         <p class="card__content-list--contact">
@@ -280,70 +377,80 @@
                       </li>
                     </ul>
                   </li>
-            
                 </ul>
             
                 <div class="ftr__btns-block">
-                    <div class="ftr__btns-wrapper">
-                        <button class="btn-locations">
-                          Our Locations
-                          <svg class="btn-locations__svg-chevron">
-                              <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-franchise">
-                          Franchise
-                          <svg class="btn-franchise__svg-chevron">
-                              <use xlink:href="./images/icons/sprite.svg#icon-chevron-right"></use>
-                            </svg>
-                        </button>
-                      </div>
+                  <div class="ftr__btns-wrapper">
+                    <button class="btn-locations">
+                      Our Locations
+                      <svg class="btn-locations__svg-chevron">
+                        <use
+                          xlink:href="./images/icons/sprite.svg#icon-chevron-right"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="btn-franchise">
+                      Franchise
+                      <svg class="btn-franchise__svg-chevron">
+                        <use
+                          xlink:href="./images/icons/sprite.svg#icon-chevron-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <!-- DOWN OF FOOTER -->
                 <div class="down-wrapper">
-                <div class="ftr__titles">
-                  <h2 class="ftr__heading">Homemade ice cream made
-                    <span class="ftr__heading-subtitle">with passion</span>
-                  </h2>
-                </div>
-                <div class="contact">
-                  <div class="contact__list-wraper">
-                  <ul class="contact__list">
-                    <li class="contact__list-item">
-                      <a href="#" class="contact__list-link">
-                        <svg class="contact__svg-android">
-                          <use xlink:href="./images/icons/sprite.svg#icon-github"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="contact__list-item">
-                      <a href="#" class="contact__list-link">
-                        <svg class="contact__svg-android">
-                          <use xlink:href="./images/icons/sprite.svg#icon-telegram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="contact__list-item">
-                      <a href="#" class="contact__list-link">
-                        <svg class="contact__svg-android">
-                          <use xlink:href="./images/icons/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                
-                  <h5 class="contact__phone">
-                    Feel free to contact <a href="#">+38-098-723-88-05</a>
-                  </h5>
-                </div>
+                  <div class="ftr__titles">
+                    <h2 class="ftr__heading">
+                      Homemade ice cream made
+                      <span class="ftr__heading-subtitle">with passion</span>
+                    </h2>
+                  </div>
+                  <div class="contact">
+                    <div class="contact__list-wraper">
+                      <ul class="contact__list">
+                        <li class="contact__list-item">
+                          <a href="#" class="contact__list-link">
+                            <svg class="contact__svg-android">
+                              <use xlink:href="./images/icons/sprite.svg#icon-github"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="contact__list-item">
+                          <a href="#" class="contact__list-link">
+                            <svg class="contact__svg-android">
+                              <use
+                                xlink:href="./images/icons/sprite.svg#icon-telegram"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="contact__list-item">
+                          <a href="#" class="contact__list-link">
+                            <svg class="contact__svg-android">
+                              <use
+                                xlink:href="./images/icons/sprite.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+            
+                    <h5 class="contact__phone">
+                      Feel free to contact <a href="#">+38-098-723-88-05</a>
+                    </h5>
+                  </div>
                 </div>
               </div>
-                <div class="ftr__bottom">
-                  <p class="ftr__bottom-copyright">© 2019 - IceCream.<span class="ftr__bottom-span">All Rights Reserved</span></p>
-                </div>
-            
-              
+              <div class="ftr__bottom">
+                <p class="ftr__bottom-copyright">
+                  © 2019 - IceCream.<span class="ftr__bottom-span"
+                    >All Rights Reserved</span
+                  >
+                </p>
+              </div>
             </footer>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
