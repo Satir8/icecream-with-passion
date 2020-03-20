@@ -1,6 +1,6 @@
 {
-  "name": "filmoteka",
-  "version": "1.0.0",
+  "name": "gulp-starter-kit",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,16 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Satir8.github.io/icecream-with-passion",
+  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
   "repository": {
     "type": "git",
-    "url": "git+https://Satir8.github.io/icecream-with-passion"
+    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
   },
-  "author": "Gregory Yakovina <g.iakovyna@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
