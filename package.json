@@ -9,15 +9,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://Satir8.github.io/icecream-with-passion",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    "url": "git+https://github.com/Satir8/icecream-with-passion"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Gregory Yakovina <g.iakovyna@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
+    "url": "https://github.com/Satir8/icecream-with-passion/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
