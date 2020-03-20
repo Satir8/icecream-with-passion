@@ -12,12 +12,12 @@
   "homepage": "https://Satir8.github.io/icecream-with-passion",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Satir8/icecream-with-passion"
+    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
   },
   "author": "Gregory Yakovina <g.iakovyna@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Satir8/icecream-with-passion/issues"
+    "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
